@@ -1,0 +1,15 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <ion-input type="text" label="Username" labelPlacement="stacked" [clearInput]="true" placeholder="Username" required
+      [(ngModel)]="usernameIn" fill="solid"></ion-input>
+    <ion-input type="password" label="Password" labelPlacement="stacked" placeholder="Password" required
+      [(ngModel)]="passwordIn" fill="solid"></ion-input>
+    <ion-button (click)="login()">Login</ion-button>
+  </div>
+</ion-content>
